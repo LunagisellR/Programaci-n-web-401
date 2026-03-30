@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-card {
+    background: white;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.header-image img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.form-header {
+    text-align: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+form {
+    padding: 0 30px 30px 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+.name-group {
+    display: flex;
+    gap: 15px;
+}
+
+.name-group input {
+    width: 50%;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.checkbox-group label {
+    display: inline;
+    font-weight: normal;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(102,126,234,0.4);
+}
+
+@media (max-width: 600px) {
+    .name-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .name-group input {
+        width: 100%;
+    }
+}
